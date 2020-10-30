@@ -1,8 +1,7 @@
 FROM pinzhikeji/alpine-zh:1.0
 
-RUN wget http://file.xiniudada.top/file/jdk-8u271-linux-x64.tar.gz -q -O /tmp/jdk8.tar.gz
-
-RUN mkdir /usr/local/jdk8 \
+RUN wget http://file.xiniudada.top/file/jdk-8u271-linux-x64.tar.gz -q -O /tmp/jdk8.tar.gz \
+    && mkdir /usr/local/jdk8 \
     && tar -xzvf /tmp/jdk8.tar.gz -C /usr/local/jdk8/ \
     && mv /usr/local/jdk8/jdk1.8.0_271/* /usr/local/jdk8/ \
     && rm -rf /usr/local/jdk8/jdk1.8.0_271/ \
