@@ -1,7 +1,8 @@
 FROM pinzhikeji/alpine-zh:1.0
 
 RUN echo "Downloading jdk" \ 
-    && wget http://image.xiniudada.top/file/jdk-8u271-linux-x64.tar.gz \
+    && wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" \ 
+    && https://download.oracle.com/otn/java/jdk/8u271-b09/61ae65e088624f5aaa0b1d2d801acb16/jdk-8u271-linux-x64.tar.gz \
     -q -O /tmp/jdk8.tar.gz
 
 RUN mkdir /usr/local/jdk8 \
