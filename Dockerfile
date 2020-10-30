@@ -1,4 +1,4 @@
-FROM pinzhikeji/alpine-zh
+FROM pinzhikeji/alpine-zh:1.0
 
 RUN echo "Downloading jdk" \ 
     && wget http://image.xiniudada.top/file/jdk-8u271-linux-x64.tar.gz \
